@@ -1,40 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Happy Birthday, Wageesha!</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f0ff;
-    color: #4b0082;
-    text-align: center;
-    padding: 50px;
-  }
-  h1 {
-    font-size: 3em;
-    margin-bottom: 0;
-  }
-  p {
-    font-size: 1.2em;
-    margin-top: 5px;
-  }
-  .heart {
-    font-size: 4em;
-    color: #e91e63;
-    animation: pulse 1.5s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Wageesha! 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffe0f0, #e0f7ff);
+      color: #4b0082;
+      text-align: center;
+      padding: 50px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+      color: #c2185b;
+      text-shadow: 2px 2px #f8bbd0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    .heart {
+      font-size: 4em;
+      color: #e91e63;
+      animation: pulse 1.5s infinite;
+    }
+
+    .photos {
+      margin-top: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      transition: transform 0.3s;
+    }
+
+    .photos img:hover {
+      transform: scale(1.03);
+    }
+
+    .photos img:nth-child(1) { animation-delay: 0.2s; }
+    .photos img:nth-child(2) { animation-delay: 0.4s; }
+    .photos img:nth-child(3) { animation-delay: 0.6s; }
+    .photos img:nth-child(4) { animation-delay: 0.8s; }
+    .photos img:nth-child(5) { animation-delay: 1.0s; }
+    .photos img:nth-child(6) { animation-delay: 1.2s; }
+    .photos img:nth-child(7) { animation-delay: 1.4s; }
+    .photos img:nth-child(8) { animation-delay: 1.6s; }
+    .photos img:nth-child(9) { animation-delay: 1.8s; }
+    .photos img:nth-child(10) { animation-delay: 2.0s; }
+    .photos img:nth-child(11) { animation-delay: 2.2s; }
+    .photos img:nth-child(12) { animation-delay: 2.4s; }
+
+    .message {
+      grid-column: span 3;
+      background: linear-gradient(to right, #fff0f9, #f3e5f5);
+      color: #6a0572;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 14px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.1em;
+      animation: fadeIn 1s forwards;
+      opacity: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 700px) {
+      .message { grid-column: span 2; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2.2em; }
+      .message { grid-column: span 1; font-size: 1em; }
+    }
+  </style>
 </head>
 <body>
+
   <h1>Happy Birthday, Wageesha! 🎉</h1>
   <div class="heart">❤️</div>
-  <p>To the brightest star in my sky, may your day be filled with love, laughter, and endless joy.</p>
-  <p>From your biggest fan — with all my heart.</p>
+  <p>Life is a bittersweet journey,</p>
+  <p>And it’s only sweeter ’cause you’re in it. 🌟</p>
+  <p>So keep being the amazing source of joy that you are!</p>
+  <p>Happy Birthday, Pookie! 🥳</p>
+
+  <div class="photos">
+    <img src="image1.jpg" alt="Us together" />
+    <img src="image2.jpg" alt="Wageesha smiling" />
+    <img src="image3.jpg" alt="Us together" />
+
+    <div class="message">Every moment with you is a memory I cherish. 🌸</div>
+
+    <img src="image4.jpg" alt="Wageesha smiling" />
+    <img src="image5.jpg" alt="Us together" />
+    <img src="image6.jpg" alt="Us together" />
+
+    <div class="message">Every smile, every tear, every little moment we've shared is a treasure I hold close to my heart. 💖</div>
+
+    <img src="image7.jpg" alt="Wageesha smiling" />
+    <img src="image8.jpg" alt="Us together" />
+    <img src="image9.jpg" alt="Wageesha smiling" />
+
+    <div class="message">You deserve all the love in the world.</div>
+
+    <img src="image10.jpg" alt="Us together" />
+    <img src="image11.jpg" alt="Candid smile" />
+    <img src="image12.jpg" alt="Us with joy" />
+
+    <div class="message">
+  I may not have all the words, but my heart knows how much you mean to me 💕<br>
+  I’m not the best at surprises, but I hope this one landed just right! 😉
+</div>
+  </div>
 </body>
 </html>
